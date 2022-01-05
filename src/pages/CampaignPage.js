@@ -79,7 +79,7 @@ componentDidMount(){
                 {
                     item[key] = Moment(item[key]).format('MM-DD-YYYY hh:mm a');
                 }
-                else if(key === "timeToClick"){
+                else if(key === "timeToClick" &&  item[key]!== null ){
                     item[key] = Math.floor((item[key] /  3600000) )+":"+Math.floor((item[key] / 60000) % 60 )+":"+  Math.floor((item[key] / 1000) % 60)
                 }
             });
