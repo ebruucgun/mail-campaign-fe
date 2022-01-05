@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mail-campaign-fe/static/css/main.073c9b0a.css",
+    "main.js": "/mail-campaign-fe/static/js/main.55b6b5f7.js",
+    "static/js/787.d24cfec4.chunk.js": "/mail-campaign-fe/static/js/787.d24cfec4.chunk.js",
+    "index.html": "/mail-campaign-fe/index.html",
+    "main.073c9b0a.css.map": "/mail-campaign-fe/static/css/main.073c9b0a.css.map",
+    "main.55b6b5f7.js.map": "/mail-campaign-fe/static/js/main.55b6b5f7.js.map",
+    "787.d24cfec4.chunk.js.map": "/mail-campaign-fe/static/js/787.d24cfec4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.55b6b5f7.js"
+  ]
+}
