@@ -5,6 +5,7 @@ import ContactsPage from './pages/ContactsPage';
 import CampaignPage from './pages/CampaignPage';
 import HomePage from './pages/HomePage';
 import SendingMailPage from './pages/SendingMailPage';
+import CampaignLinkPage from './pages/CampaignLinkPage';
 
 import { HashRouter as Router, Route,  Switch} from 'react-router-dom';
 import TopBar from './components/TopBar';
@@ -19,6 +20,7 @@ function App() {
             <Route exact path="/contacts" component={ContactsPage} />
             <Route path="/campaign" component={CampaignPage} />
             <Route path="/sendingmail" component={SendingMailPage} />
+            <Route path="/campaignlink" component={CampaignLinkPage} />
         </Switch>
         </Router>
     </div>
