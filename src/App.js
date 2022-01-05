@@ -21,7 +21,7 @@ function App() {
             <Route exact path="/" component={HomePage} />
             <Route exact path="/contacts" component={ContactsPage} />
             <Route path="/campaign" component={CampaignPage} />
-            <Route path="/sendingmail#" component={SendingMailPage} />
+            <Route path="/sendingmail" component={SendingMailPage} />
         </Switch>
         </Router>
     </div>
