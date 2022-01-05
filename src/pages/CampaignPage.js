@@ -75,7 +75,7 @@ componentDidMount(){
         for (let i = 0; i < list.length; i++) {
             let item = list[i];
             Object.keys(item).map(function(key, index) {
-                if(key === "timeToReceive" || key ===  "toSentTime")
+                if((key === "timeToReceive"  || key ===  "toSentTime") && item[key] != null)
                 {
                     item[key] = Moment(item[key]).format('MM-DD-YYYY hh:mm a');
                 }
