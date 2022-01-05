@@ -9,7 +9,7 @@ const table = props => {
 
   return (
     <MUIDataTable
-      title={"Contacts list"}
+      title={""}
       data={props.children[1]}
       columns={props.children[3]}
       options={options}

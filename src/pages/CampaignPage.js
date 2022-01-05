@@ -1,7 +1,7 @@
 import React from "react";
 
 import Table from "../components/List";
-
+import Moment from 'moment';
 import { ThemeProvider } from "@mui/styles";
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import {getCampaigns} from '../components/apiCalls';
@@ -70,7 +70,25 @@ componentDidMount(){
   
   getAllCampaigns(){
     getCampaigns().then(response =>{
-      this.setState({campaignList:response.data})}
+        let list = response.data;
+        let mappedlist = [];
+        for (let i = 0; i < list.length; i++) {
+            let item = list[i];
+            Object.keys(item).map(function(key, index) {
+                if(key === "timeToReceive" || key ===  "toSentTime")
+                {
+                    item[key] = Moment(item[key]).format('MM-DD-YYYY hh:mm a');
+                }
+                else if(key === "timeToClick"){
+                    item[key] = Math.floor((item[key] /  3600000) )+":"+Math.floor((item[key] / 60000) % 60 )+":"+  Math.floor((item[key] / 1000) % 60)
+                }
+                else{
+                    item[key] = item[key]
+                }
+            });
+            mappedlist.push(item);
+        }
+      this.setState({campaignList: mappedlist})}
     )
   }
 
