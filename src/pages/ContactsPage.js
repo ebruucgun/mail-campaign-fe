@@ -9,9 +9,6 @@ import validator from "validator";
 class ContactsPage extends React.Component{
 
   state = {
-    userName : null,
-    surname : null,
-    password : null,
     createContact : false,
     selectedFile : null,
     contactList : [],
@@ -65,7 +62,7 @@ onFileUpload = () => {
   formData.append("file",
     this.state.selectedFile
   );
-  axios.post("/uploadfile", formData).then(response => {
+  axios.post("https://mailcampaignn.herokuapp.com/uploadfile", formData).then(response => {
     this.setState({contactList: [...response.data, ...this.state.contactList]})
   })
   
@@ -116,7 +113,7 @@ onClickCreate = event => {
   }
 
   if(name && surname && email && validemail){
-    axios.post('api/1.0/create/contact', body)
+    axios.post('https://mailcampaignn.herokuapp.com/api/1.0/create/contact', body)
       .then((response)=>{
         this.setState({contactList: [response.data, ...this.state.contactList]})
       })

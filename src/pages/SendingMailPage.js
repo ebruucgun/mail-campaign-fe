@@ -54,7 +54,7 @@ sendMail = event => {
     }
     if(header && body){
         this.setState({sendingMail:true})
-        axios.post('api/1.0/sendmail', mail)
+        axios.post('https://mailcampaignn.herokuapp.com/api/1.0/sendmail', mail)
         .then((response)=>{
             console.log(response)
             alert("Campaign sent successfully");
