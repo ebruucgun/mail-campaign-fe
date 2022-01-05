@@ -82,9 +82,6 @@ componentDidMount(){
                 else if(key === "timeToClick"){
                     item[key] = Math.floor((item[key] /  3600000) )+":"+Math.floor((item[key] / 60000) % 60 )+":"+  Math.floor((item[key] / 1000) % 60)
                 }
-                else{
-                    item[key] = item[key]
-                }
             });
             mappedlist.push(item);
         }
