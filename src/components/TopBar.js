@@ -17,9 +17,6 @@ class TopBar extends React.Component{
         <Link className="nav-link" to="contacts">Contacts</Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="groups">Groups</Link>
-      </li>
-      <li className="nav-item">
         <Link className="nav-link" to="campaign">Campaign</Link>
       </li>
       <li className="nav-item">
