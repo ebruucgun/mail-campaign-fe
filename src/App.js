@@ -15,7 +15,7 @@ function App() {
   return (
     
     <div>
-      <Router basename="/contacts">
+      <Router >
         <TopBar/>
           <Switch>
             <Route exact path="/" component={HomePage} />
