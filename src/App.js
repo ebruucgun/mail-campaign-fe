@@ -6,7 +6,7 @@ import CampaignPage from './pages/CampaignPage';
 import HomePage from './pages/HomePage';
 import SendingMailPage from './pages/SendingMailPage';
 
-import { HashRouter as Router, Route,  Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route,  Switch} from 'react-router-dom';
 import TopBar from './components/TopBar';
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
         <TopBar/>
           <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route exact path="https://ebruucgun.github.io/mail-campaign-fe//contacts" component={ContactsPage} />
-            <Route path="https://ebruucgun.github.io/mail-campaign-fe//campaign" component={CampaignPage} />
-            <Route path="https://ebruucgun.github.io/mail-campaign-fe//sendingmail" component={SendingMailPage} />
+            <Route exact path="https://ebruucgun.github.io/mail-campaign-fe/contacts" component={ContactsPage} />
+            <Route path="https://ebruucgun.github.io/mail-campaign-fe/campaign" component={CampaignPage} />
+            <Route path="https://ebruucgun.github.io/mail-campaign-fe/sendingmail" component={SendingMailPage} />
         </Switch>
         </Router>
     </div>
