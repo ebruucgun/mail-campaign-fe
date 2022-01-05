@@ -19,7 +19,7 @@ function App() {
         <TopBar/>
           <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route exact path="/contacts" component={ContactsPage} />
+            <Route exact path="https://ebruucgun.github.io/mail-campaign-fe/contacts" component={ContactsPage} />
             <Route path="/campaign" component={CampaignPage} />
             <Route path="/sendingmail" component={SendingMailPage} />
         </Switch>
